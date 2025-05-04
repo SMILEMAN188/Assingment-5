@@ -18,12 +18,13 @@
       }
     </style>
     <!-- DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
 </head>
-<body class="px-36 bg-[#c088c9]">
-                                                      <!-- Navbar -->
-    <nav class="flex flex-row justify-between items-center bg-[#ffffff] rounded-2xl p-5 mt-6 mb-5">
+<body class="px-36 bg-[#ceb4d2]">
+    <span ></span>                                                  <!-- Navbar -->
+    <nav class="flex flex-row justify-between items-center bg-[#ffffff] rounded-2xl p-4 mb-5">
         <div class="flex flex-row gap-2 justify-center items-center">
             <img src="assets/logo.png" alt="Logo">
             <p class="font-light text-4xl">Dev <span class="font-bold text-4xl decoration-[#00303C]">Board</span></p>
@@ -39,10 +40,10 @@
         </div>
     </nav>
                                                         <!-- Main -->
-        <section>
+        <section class="flex flex-row gap-6 justify-between items-center">
                                                       <!-- Discover section -->
-            <div>
-                <header class="bg-white p-4 rounded-xl flex flex-row justify-center items-center gap-6 border-b-2 border-dashed border-[#3752FD] ">
+            <div class="bg-white p-4 rounded-xl">
+                <section class= "flex flex-row justify-center items-center gap-6 pb-8 border-b-2 border-dashed border-[#3752FD]">
                                                         <!-- checkbox-1 -->
                     <div class="flex flex-row justify-center items-center p-6 bg-[#F4F7FF] rounded-lg gap-5">
                         <div class="bg-white p-4 rounded-full">
@@ -74,15 +75,116 @@
                         </div>
                     </div>
 
-                </header>
+                </section>
+                                                          <!-- Cards -->
+                <section class="grid grid-cols-3 pt-8 gap-2">
+                                                                <!-- card-1 -->
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg">
+                        <button class="text-base font-normal decoration-[#00303C] px-2 py-4 rounded-lg bg-white mb-4">ShopEase</button>
+                        <p class="font-medium text-2xl decoration-[#00303C] mb-4">Fix Mobile Button Issue</p>
+                        <div class="pb-4 border-b-2 border-dashed border-[#3752FD] ">
+                            <p class="bg-white rounded-lg p-4 w-64 h-14">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                        </div>
+                        <span class="flex flex-row justify-between items-center pt-3">
+                            <div>
+                                <p class="text-sm decoration-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base decoration-[#00303C]">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-outline btn-primary">Completed</button>
+                        </span>
+                    </div>
+                                                        <!-- card-2 -->
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg">
+                        <button class="text-base font-normal decoration-[#00303C] px-2 py-4 rounded-lg bg-white mb-4">CloudSync</button>
+                        <p class="font-medium text-2xl decoration-[#00303C] mb-4">Add Dark Mode</p>
+                        <div class="pb-4 border-b-2 border-dashed border-[#3752FD] ">
+                            <p class="bg-white rounded-lg p-4">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                        </div>
+                        <span class="flex flex-row justify-between items-center pt-3">
+                            <div>
+                                <p class="text-sm decoration-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base decoration-[#00303C]">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-outline btn-primary">Completed</button>
+                        </span>
+                    </div>
+                                                            <!-- card-3 -->
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg">
+                        <button class="text-base font-normal decoration-[#00303C] px-2 py-4 rounded-lg bg-white mb-4">SwiftPay</button>
+                        <p class="font-medium text-2xl decoration-[#00303C] mb-4">Optimize  Home page </p>
+                        <div class="pb-4 border-b-2 border-dashed border-[#3752FD] ">
+                            <p class="bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                        </div>
+                        <span class="flex flex-row justify-between items-center pt-3">
+                            <div>
+                                <p class="text-sm decoration-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base decoration-[#00303C]">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-outline btn-primary">Completed</button>
+                        </span>
+                    </div>
+                                                                <!-- card-4 -->
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg">
+                        <button class="text-base font-normal decoration-[#00303C] px-2 py-4 rounded-lg bg-white mb-4">Meta</button>
+                        <p class="font-medium text-2xl decoration-[#00303C] mb-4">Add new emoji 🤲</p>
+                        <div class="pb-4 border-b-2 border-dashed border-[#3752FD] ">
+                            <p class="bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                        </div>
+                        <span class="flex flex-row justify-between items-center pt-3">
+                            <div>
+                                <p class="text-sm decoration-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base decoration-[#00303C]">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-outline btn-primary">Completed</button>
+                        </span>
+                    </div>
+                                                                    <!-- card-5 -->
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg">
+                        <button class="text-base font-normal decoration-[#00303C] px-2 py-4 rounded-lg bg-white mb-4">Google LLC</button>
+                        <p class="font-medium text-2xl decoration-[#00303C] mb-4">Integrate OpenAI API </p>
+                        <div class="pb-4 border-b-2 border-dashed border-[#3752FD] ">
+                            <p class="bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                        </div>
+                        <span class="flex flex-row justify-between items-center pt-3">
+                            <div>
+                                <p class="text-sm decoration-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base decoration-[#00303C]">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-outline btn-primary">Completed</button>
+                        </span>
+                    </div>
+                                                                    <!-- card-6 -->
+                    <div class="bg-[#F4F7FF] p-6 rounded-lg">
+                        <button class="text-base font-normal decoration-[#00303C] px-2 py-4 rounded-lg bg-white mb-4">Glassdoar</button>
+                        <p class="font-medium text-2xl decoration-[#00303C] mb-4">Improve Job searching </p>
+                        <div class="pb-4 border-b-2 border-dashed border-[#3752FD] ">
+                            <p class="bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                                and ensure onClick works properly</p>
+                        </div>
+                        <span class="flex flex-row justify-between items-center pt-3">
+                            <div>
+                                <p class="text-sm decoration-[#00303C]">Deadline</p>
+                                <p class="font-medium text-base decoration-[#00303C]">21 March 2025</p>
+                            </div>
+                            <button class="btn btn-outline btn-primary">Completed</button>
+                        </span>
+                    </div>
+                </section>
 
-                <fotter>
-
-                </fotter>
+                
             </div>
                                                        <!-- Activity log section -->
-            <div>
-
+            <div class="flex flex-col bg-white rounded-lg">
+                <div class="flex flex-row justify-between items-center">
+                    <img src="assets/activity.png" alt="">
+                    <p class="font-medium text-xl">Activity Log</p>
+                </div>
+                <button class="btn btn-outline btn-primary">Clear History</button>
+                
             </div>
         </section>
 </body>
