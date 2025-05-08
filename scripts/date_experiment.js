@@ -7,9 +7,13 @@
 
 
 
+// const today = new Date();
+
+// console.log(today.toDateString())
+// console.log(today.getDate());
+// console.log(today.getFullYear());
+// console.log(today.getDay());
+
 const today = new Date();
 
-console.log(today.toDateString())
-console.log(today.getDate());
-console.log(today.getFullYear());
-console.log(today.getDay());
+console.log(today.toDateString());
