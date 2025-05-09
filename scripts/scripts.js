@@ -12,7 +12,7 @@ document.getElementById("btn-1").addEventListener("click",function (event) {
     document.getElementById("completed-task").innerText=sum;
     const div = document.createElement("div");
     div.innerHTML=`
-    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have copleted the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
+    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have completed the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
     `;
     document.querySelector(".container").appendChild(div);
     this.disabled=true ;
@@ -33,7 +33,7 @@ document.getElementById("btn-2").addEventListener("click",function (event) {
     document.getElementById("completed-task").innerText=sum;
     const div = document.createElement("div");
     div.innerHTML=`
-    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have copleted the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
+    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have completed the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
     `;
     document.querySelector(".container").appendChild(div);
     this.disabled=true ;
@@ -53,7 +53,7 @@ document.getElementById("btn-3").addEventListener("click",function (event) {
     document.getElementById("completed-task").innerText=sum;
     const div = document.createElement("div");
     div.innerHTML=`
-    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have copleted the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
+    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have completed the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
     `;
     document.querySelector(".container").appendChild(div);
     this.disabled=true ;
@@ -73,7 +73,7 @@ document.getElementById("btn-4").addEventListener("click",function (event) {
     document.getElementById("completed-task").innerText=sum;
     const div = document.createElement("div");
     div.innerHTML=`
-    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have copleted the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
+    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have completed the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
     `;
     document.querySelector(".container").appendChild(div);
     this.disabled=true ;
@@ -93,7 +93,7 @@ document.getElementById("btn-5").addEventListener("click",function (event) {
     document.getElementById("completed-task").innerText=sum;
     const div = document.createElement("div");
     div.innerHTML=`
-    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have copleted the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
+    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have completed the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
     `;
     document.querySelector(".container").appendChild(div);
     this.disabled=true ;
@@ -113,7 +113,7 @@ document.getElementById("btn-6").addEventListener("click",function (event) {
     document.getElementById("completed-task").innerText=sum;
     const div = document.createElement("div");
     div.innerHTML=`
-    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have copleted the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
+    <h1 class="bg-[#F4F7FF] p-2 rounded-lg m-2 font-light text-sm ">You have completed the task <br> ${taskName} at ${today.toLocaleTimeString()} </h1>
     `;
     document.querySelector(".container").appendChild(div);
     this.disabled=true ;
@@ -123,4 +123,11 @@ if (finishTask -1 === 0) {
     else{
 
     }
+})
+
+document.getElementById("clear").addEventListener("click",function (event) {
+    event.preventDefault();
+    const container =document.getElementById("container");
+    container.innerHTML='';
+
 })
