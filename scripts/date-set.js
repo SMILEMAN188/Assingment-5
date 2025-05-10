@@ -9,4 +9,4 @@ function dateEvent() {
     }
 
 }
-
+window.onload=dateEvent;
