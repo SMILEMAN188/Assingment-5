@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     
 </head>
-<body>
+<body onload="dateEvent()">
     <section id="" class="px-32 pt-6 pb-8 bg-cyan-800">
                                                                     <!-- Navbar -->
     <nav class="flex flex-row justify-between items-center bg-[#ffffff] rounded-2xl p-3 mb-5 ">
@@ -47,7 +47,7 @@
                                                         <!-- checkbox-1 -->
                     <div class="flex flex-row justify-center items-center p-6 bg-[#F4F7FF] rounded-lg gap-5">
                         <div class="bg-white p-4 rounded-full">
-                            <img src="assets/checkbox.png" alt="">
+                            <img class="w-10" src="assets/checkbox.png" alt="">
                         </div>
                         <div>
                             <p class="text-base font-medium decoration-[#00303C] whitespace-nowrap">Task Assigned</p>
@@ -68,11 +68,10 @@
                                                         <!-- checkbox-3 -->
                     <div class="flex flex-row justify-center items-center p-6 bg-[#F4F7FF] rounded-lg gap-2">
                         <div class="bg-white p-4 rounded-full">
-                            <img src="assets/calender.png" alt="">
+                            <img class="w-8" src="assets/calender.png" alt="">
                         </div>
                         <div>
-                            <p id="day" class="text-xl font-bold decoration-[#00303C]">Day</p>
-                            <p id="date-now" class="font-bold text-xl whitespace-nowrap">Jul 28 2025 </p>
+                            <p id="date-now" class="font-bold text-xl decoration-[#00303C] whitespace-pre-wrap"></p>
                         </div>
                     </div>
                 </section>
@@ -179,7 +178,7 @@
                     <p class="font-medium text-xl decoration-[#00303C] whitespace-nowrap">Activity Log</p>
                 </div>
                 <div class="px-12">
-                    <button id="clear" class="btn btn-outline btn-primary ">Clear History</button>
+                    <button id="clear" class="btn btn-outline btn-primary whitespace-nowrap">Clear History</button>
                 </div>
                 <span class="pt-4 pb-4 border-b-2 border-dashed border-[#3752FD]"></span>
                 <div id="container" class="container flex flex-col gap-4 ">
@@ -191,5 +190,6 @@
     </section> 
     <script src="scripts/utilities.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/date-set.js"></script>
 </body>
 </html>
